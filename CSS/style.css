@@ -1,0 +1,218 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Protest+Riot&display=swap');
+
+
+/* VARRIABLES */
+:root{
+    /* ---------- LIGHT MODE ---------- */
+
+    /* BG COLOR */
+    --header-bgColor-lm: #0086ff;
+    --body-bgColor-lm: linear-gradient(0deg, rgba(0,51,255,1) 20%, rgba(228,255,0,1) 100%);    ;
+    --main-bgColor-lm: linear-gradient(0deg, rgba(0,51,255,1) 20%, rgba(228,255,0,1) 100%);
+    ;
+    --section-bgColor-lm: black;
+    --footer-bgColor-lm: #0086ff;
+
+    /* COLOR */
+    --color-text-lm: white;
+
+    /* ---------- DARK MODE ----------*/
+
+    /* BG COLOR */
+    --header-bgColor-dm: rgb(30, 30, 30);
+    --body-bgColor-dm: linear-gradient(0deg, rgba(0,51,255,1) 20%, rgba(228,255,0,1) 100%);    ;
+    --main-bgColor-dm: linear-gradient(0deg, rgba(0,51,255,1) 20%, rgba(228,255,0,1) 100%);    ;
+    --section-bgColor-dm: black;
+    --footer-bgColor-dm: rgb(30, 30, 30);
+
+    /* COLOR */
+    --color-text-dm: white;
+
+    /* FONT */
+    --font-primary: 'Anta', serif;
+    --font-secondary: "Protest Riot", sans-serif;;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+}
+
+.body__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    padding: 50px 0;
+    background-color: #00284c;
+}
+.form{
+    background-color: rgb(208, 208, 208);
+    height: fit-content;
+    width: 500px;
+    padding: 30px 30px 50px 30px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.LogIn__links_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.close_button__div{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: 50px;
+    width: 100%;
+}
+.form__title{
+    padding-bottom: 20px;
+}
+.close_button{
+    color: red;
+    width: 30px;
+    height: 30px;
+}
+.close_button:hover{
+    color: black;
+    width: 30px;
+    height: 30px;
+}
+
+.form_inputs{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+sup{
+    font-size:15px;
+    color: red;
+    font-weight: bold;
+}
+
+.input__div{
+    width: 100%;
+    position: relative;
+}
+.input__icon{
+    position: absolute;
+    top: 55%;
+    left: 96%;
+}
+.input__div input{
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding-left: 5px;
+    border: 2px solid rgb(90, 89, 89);
+    border-radius: 4px;
+    outline: none;
+}
+.input__div input:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+.input__div input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.input__div input[type="submit"]{
+    height: 50px;
+    width: calc(100% + 10px);
+    border: 2px solid black ;
+    background-color: black;
+    color: white;
+    transition: all 0.4s linear;
+}
+
+.input__div input[type="submit"]:hover{
+    border: 2px solid #65b7ff;
+    background-color: #65b7ff;
+    color: black;
+    cursor: pointer;
+}
+.form_inputs label {
+    color: rgb(36, 36, 36);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.checkbox__div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+
+.social__container{
+    padding: 30px 0;
+}
+
+.continue__with::after,
+.continue__with::before{
+    content: " ------------------ ";
+}
+
+.social__media__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 0 30px 0;
+}
+
+.social__media_bg{
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s linear;
+}
+.social__media_bg:hover{
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+} 
+.social__media_bg .bi{
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.facebook__bg{
+    background-color: rgb(0, 128, 255);
+}
+.facebook__bg:hover{
+    background-color: rgb(68, 161, 255);
+}
+.google__bg{
+    background-color:  #01a522;
+}
+.google__bg:hover{
+    background-color:  #00d12a;
+}
+.apple__bg{
+    background-color: black;
+}
+.apple__bg:hover{
+    background-color: rgb(56, 56, 56);
+}
